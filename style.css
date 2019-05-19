@@ -754,9 +754,9 @@ section.naked {
     line-height: 1;
     font-size: 40px;
     text-transform: uppercase;
-    -webkit-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
+    -webkit-transition: all 100ms ease-in;
+    -o-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
 }
 .facts h4 {
     font-size: 40px;
