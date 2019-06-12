@@ -1,0 +1,79 @@
+<div class="swiper-wrapper"> <a class="arrow-left" href="#"></a> <a class="arrow-right" href="#"></a>
+    <div class="swiper-container gallery">
+      <div class="swiper">
+        <div class="item">
+          <figure class="frame"><img src="style/images/art/pc1.jpg" alt="" /></figure>
+        </div>
+        <!-- /.item -->
+        <div class="item">
+          <figure class="frame"><img src="style/images/art/pc2.jpg" alt="" /></figure>
+        </div>
+        <!-- /.item -->
+        <div class="item">
+          <figure class="frame"><img src="style/images/art/pc3.jpg" alt="" /></figure>
+        </div>
+        <!-- /.item -->
+        <div class="item">
+          <figure class="frame"><img src="style/images/art/pc4.jpg" alt="" /></figure>
+        </div>
+        <!-- /.item -->
+        <div class="item">
+          <figure class="frame"><img src="style/images/art/pc5.jpg" alt="" /></figure>
+        </div>
+        <!-- /.item -->
+        <div class="item">
+          <figure class="frame"><img src="style/images/art/pc6.jpg" alt="" /></figure>
+        </div>
+        <!-- /.item -->
+        <div class="item">
+          <figure class="frame"><img src="style/images/art/pc7.jpg" alt="" /></figure>
+        </div>
+
+        <!-- /.item -->
+      </div>
+      <!-- /.swiper -->
+    </div>
+    <!-- /.swiper-container -->
+  </div>
+  <!-- /.swiper-wrapper -->
+  
+  <div class="container inner">
+    <div class="box">
+        
+      <h1 class="post-title">PCFC获得2019 Spring 美中高校巡回赛普渡站冠军！</h1>
+      <p>在刚刚结束的2019 Spring 美中高校巡回赛普渡站 (简称普渡杯)中，PCFC连续击败圣路易斯华盛顿大学 (WUStl)， 印第安纳大学 (IU)，和伊利诺伊大学香槟分校 (UIUC)，以三胜的战绩获得普渡杯冠军</p>
+      <div class="divide10"></div>
+      <a href="#" class="btn">More Info</a> 
+      
+    </div>
+    <!-- /.box -->
+  </div>
+  <!-- /.container -->
+  
+  
+  
+  
+  <!-- INSERT PAGE SCRIPTS HERE -->
+  <script type="text/javascript">
+      $('.swiper-container.gallery').each(function(){
+            $(this).swiper({
+               grabCursor: true,
+              slidesPerView: 'auto',
+              wrapperClass: 'swiper',
+              slideClass: 'item',
+              offsetPxBefore: 0,
+               offsetPxAfter: 0
+            });
+          
+            var $swipers = $(this);
+          
+            $swipers.siblings('.arrow-left').click(function(){
+          $swipers.data('swiper').swipeTo($swipers.data('swiper').activeIndex-1);
+          return false;
+          });
+          $swipers.siblings('.arrow-right').click(function(){
+          $swipers.data('swiper').swipeTo($swipers.data('swiper').activeIndex+1);
+          return false;
+          });
+      });
+  </script>
